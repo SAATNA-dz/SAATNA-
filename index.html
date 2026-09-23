@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAATNA | متجر الساعات الفاخرة بالجزائر</title>
+    <meta name="description" content="متجر SAATNA الرائد لبيع الساعات الرجالية الفاخرة والأنيقة في الجزائر. توصيل سريع لكافة الـ 58 ولاية مع الدفع عند الاستلام.">
+    <!-- خطوط عربية فاخرة (Tajawal & Cairo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- شريط الإعلانات العلوي -->
+    <div class="top-announcement">
+        <div class="container marquee-content">
+            <span>✨ تخفيضات استثنائية لفترة محدودة</span>
+            <span class="bullet">•</span>
+            <span>🚚 توصيل سريع متوفر لكافة الـ 58 ولاية</span>
+            <span class="bullet">•</span>
+            <span>💵 الدفع عند الاستلام مع فحص الساعة قبل الدفع</span>
+            <span class="bullet">•</span>
+            <span>🔒 الحد الأقصى للطلب: 4 ساعات فقط</span>
+        </div>
+    </div>
+
+    <!-- شريط الترويسة والتنقل -->
+    <header class="main-header" id="header">
+        <div class="container header-container">
+            <a href="#" class="brand-logo">
+                <img src="images/logo.png" alt="SAATNA Logo" class="logo-img" onerror="this.onerror=null; this.src='images/logo.jpg';">
+                <div class="brand-text">
+                    <span class="brand-name">SAATNA</span>
+                    <span class="brand-slogan">Le luxe mesuré en secondes</span>
+                </div>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#hero">الرئيسية</a>
+                <a href="#products-section">تشكيلة الساعات</a>
+                <a href="#features">مميزاتنا</a>
+                <a href="#faq">الأسئلة الشائعة</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="cart-trigger-btn" id="openCartBtn" aria-label="سلة المشتريات">
+                    <svg class="cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="cart-label">السلة</span>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- المحتوى الرئيسي للموقع -->
+    <main>
+        <!-- واجهة البداية الفاخرة (Hero Section) -->
+        <section class="hero-section" id="hero">
+            <div class="hero-ambient-glow"></div>
+            <div class="container hero-container">
+                <div class="hero-badge">
+                    <span class="pulse-dot"></span>
+                    متجر الساعات الفاخرة الأول بالجزائر
+                </div>
+
+                <div class="hero-logo-center">
+                    <img src="images/logo.png" alt="SAATNA" class="hero-center-logo" onerror="this.onerror=null; this.src='images/logo.jpg';">
+                </div>
+
+                <h1 class="hero-title">
+                    الفخامة في معصمك، <br>
+                    <span class="gradient-text">والأناقة التي تعكس شخصيتك</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    مرحبًا بك في متجر <strong>SAATNA</strong> المتخصص في أرقى الساعات الكلاسيكية والرياضية بالجزائر. تشكيلة مختارة من TISSOT وBOSS وCASIO بجودة أصلية استثنائية وأسعار تنافسية.
+                </p>
+
+                <!-- مميزات سريعة -->
+                <div class="hero-highlights">
+                    <div class="highlight-item">
+                        <span class="hl-icon">⚡</span>
+                        <span>طلب فوري بضغطة زر</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="hl-icon">📦</span>
+                        <span>معاينة وتأكد قبل الدفع</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="hl-icon">💬</span>
+                        <span>تأكيد مباشر عبر واتساب</span>
+                    </div>
+                </div>
+
+                <!-- الزر ثلاثي الأبعاد المطاطي (3D Soft Rubber CTA Button) -->
+                <div class="cta-wrapper">
+                    <a href="#products-section" class="btn-3d-rubber" id="heroCtaBtn">
+                        <span class="btn-3d-face">
+                            <span class="btn-icon">⌚</span>
+                            <span class="btn-title">تصفح تشكيلة الساعات واطلب الآن</span>
+                            <svg class="btn-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <span class="cta-hint">👇 انقر للانتقال بسلاسة إلى الساعات المتوفرة</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ميزات الثقة والضمان -->
+        <section class="features-bar" id="features">
+            <div class="container features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <div class="feature-info">
+                        <h3>جودة استثنائية ومضمونة</h3>
+                        <p>فولاذ صلب ستانلس ستيل مقاوم للصدأ، زجاج مضاد للخدش وتصاميم مميزة.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <div class="feature-info">
+                        <h3>شحن لـ 58 ولاية جزائرية</h3>
+                        <p>توصيل آمن وسريع حتى باب دارك أو عنوان عملك في وقت قياسي.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <div class="feature-info">
+                        <h3>الدفع نقداً عند الاستلام</h3>
+                        <p>افتح طردك وعاين ساعتك وتأكد منها بنفسك قبل دفع أي دينار.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <div class="feature-info">
+                        <h3>متابعة فورية عبر WhatsApp</h3>
+                        <p>خدمة عملاء شخصية وسريعة لمتابعة طلبيتك حتى وصولها.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم عرض الساعات والمنتجات -->
+        <section class="products-section" id="products-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">كتالوج الساعات الحصرية</div>
+                    <h2 class="section-title">تشكيلة الساعات المتوفرة في المتجر</h2>
+                    <p class="section-desc">اختر ساعتك المفضلة وأضفها إلى السلة (الحد الأقصى المسموح به هو 4 ساعات لكل طلب).</p>
+                    <div class="order-limit-banner">
+                        <span class="limit-icon">ℹ️</span>
+                        <span>ملاحظة: يمكنك طلب حتى <strong>4 ساعات كحد أقصى</strong> في الطلب الواحد لضمان سرعة الشحن والتوصيل.</span>
+                    </div>
+                </div>
+
+                <!-- بطاقات المنتجات (يتم توليدها ديناميكياً من ملف app.js) -->
+                <div class="products-grid" id="productsGrid"></div>
+            </div>
+        </section>
+
+        <!-- خطوات الطلب السريعة -->
+        <section class="how-it-works">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">تجربة تسوق سهلة وسريعة</div>
+                    <h2 class="section-title">كيف تطلب ساعتك من SAATNA؟</h2>
+                </div>
+
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>اختر ساعتك المفضلة</h3>
+                        <p>تصفح التشكيلة وأضف الساعات التي ترغب بها إلى السلة (من 1 إلى 4 ساعات كحد أقصى).</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>أدخل معلومات التوصيل</h3>
+                        <p>اكتب اسمك، رقم هاتفك، ولايتك وعنوانك بدقة داخل النموذج البسيط والمريح.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>تأكيد فوري عبر واتساب</h3>
+                        <p>ضغطة زر واحدة تنقلك مباشرة إلى واتساب برسالة منظمة بكامل تفاصيل طلبك.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <h3>الاستلام والمعاينة</h3>
+                        <p>سيتصل بك مندوب التوصيل، استلم ساعتك وافحصها وادفع بأمان وثقة تامة.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- الأسئلة الشائعة -->
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">كل ما ترغب بمعرفته</div>
+                    <h2 class="section-title">الأسئلة الشائعة</h2>
+                </div>
+
+                <div class="faq-accordion">
+                    <details class="faq-item" open>
+                        <summary class="faq-question">
+                            <span>كم يستغرق توصيل الطلب إلى ولايتي؟</span>
+                            <span class="faq-icon">+</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>يستغرق التوصيل عادةً من 24 إلى 48 ساعة للولايات الشمالية والوسطى، ومن 48 إلى 72 ساعة لولايات الهضاب والجنوب الكبير.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>هل يمكنني معاينة الساعة وفتح الطرد قبل الدفع؟</span>
+                            <span class="faq-icon">+</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>نعم بالتأكيد! نحن نعتمد سياسة المعاينة عند الاستلام لضمان ثقتك وراحتك التامة ومطابقة الساعة لمواصفاتها 100%.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>لماذا تم تحديد الحد الأقصى بـ 4 ساعات لكل طلب؟</span>
+                            <span class="faq-icon">+</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>تم وضع حد 4 ساعات لتفادي تأخير الشحنات وإتاحة الفرصة لجميع الزبائن للاستفادة من أسعارنا الحصرية قبل نفاد الكمية.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>كيف يتم التواصل معي بعد إرسال الطلب عبر واتساب؟</span>
+                            <span class="faq-icon">+</span>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>بمجرد إرسال رسالة الطلب، يتواصل معك صاحب المتجر مباشرة لتأكيد توفر المنتجات وتجهيز شحنتك فوراً وتزويدك بموعد وصول المندوب.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- درج سلة المشتريات التفاعلية (Cart Drawer) -->
+    <div class="cart-backdrop" id="cartBackdrop"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-label="لوحة سلة المشتريات">
+        <div class="cart-header">
+            <div class="cart-title-wrapper">
+                <svg class="cart-title-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                <h3>سلة المشتريات</h3>
+                <span class="cart-counter-pill" id="cartHeaderCount">0</span>
+            </div>
+            <button class="cart-close-btn" id="closeCartBtn" aria-label="إغلاق السلة">&times;</button>
+        </div>
+
+        <div class="cart-limit-notice">
+            <span class="icon">⚠️</span>
+            <span>الحد الأقصى المسموح به: <strong id="limitItemsRemaining">0</strong> / 4 ساعات</span>
+        </div>
+
+        <!-- قائمة عناصر السلة -->
+        <div class="cart-items" id="cartItemsList"></div>
+
+        <!-- ملخص وأزرار السلة -->
+        <div class="cart-footer" id="cartFooter">
+            <div class="cart-summary-row">
+                <span>إجمالي الساعات:</span>
+                <span id="cartTotalItemsCount">0 ساعات</span>
+            </div>
+            <div class="cart-summary-row total-row">
+                <span>المبلغ الإجمالي:</span>
+                <span class="total-price" id="cartTotalPrice">0 دج</span>
+            </div>
+
+            <div class="cart-actions">
+                <button class="btn-checkout" id="proceedToCheckoutBtn">
+                    <span>متابعة إتمام الطلب</span>
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </button>
+                <button class="btn-continue-shopping" id="continueShoppingBtn">
+                    الاستمرار في التسوق
+                </button>
+            </div>
+        </div>
+    </aside>
+
+    <!-- نافذة إتمام الطلب وتأكيده (Checkout Modal) -->
+    <div class="checkout-modal-backdrop" id="checkoutBackdrop">
+        <div class="checkout-modal" id="checkoutModal">
+            <div class="checkout-header">
+                <div class="checkout-title">
+                    <span class="checkout-icon">📝</span>
+                    <h2>إتمام وتأكيد الطلب</h2>
+                </div>
+                <button class="modal-close-btn" id="closeCheckoutBtn" aria-label="إغلاق">&times;</button>
+            </div>
+
+            <div class="checkout-content">
+                <!-- ملخص الطلب والمنتجات -->
+                <div class="checkout-summary-box">
+                    <h3 class="box-heading">ملخص الساعات المختارة</h3>
+                    <div class="checkout-items-preview" id="checkoutItemsPreview"></div>
+                    <div class="checkout-total-banner">
+                        <span>المجموع الإجمالي المطلوب:</span>
+                        <strong id="checkoutFinalTotal">0 دج</strong>
+                    </div>
+                </div>
+
+                <!-- نموذج معلومات العميل -->
+                <form class="checkout-form" id="checkoutForm" novalidate>
+                    <h3 class="box-heading">بيانات المستلم وعنوان التوصيل</h3>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">الاسم <span class="required">*</span></label>
+                            <input type="text" id="firstName" name="firstName" placeholder="مثال: يوسف" required>
+                            <span class="field-error" id="firstNameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">اللقب <span class="required">*</span></label>
+                            <input type="text" id="lastName" name="lastName" placeholder="مثال: منصوري" required>
+                            <span class="field-error" id="lastNameError"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">رقم الهاتف <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" placeholder="مثال: 0655968733" dir="ltr" required>
+                            <span class="field-hint">رقم هاتف شغال للتواصل وتأكيد الشحن</span>
+                            <span class="field-error" id="phoneError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="wilaya">الولاية (58 ولاية) <span class="required">*</span></label>
+                            <select id="wilaya" name="wilaya" required>
+                                <option value="">-- اختر ولايتك --</option>
+                            </select>
+                            <span class="field-error" id="wilayaError"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="baladiya">البلدية <span class="required">*</span></label>
+                            <input type="text" id="baladiya" name="baladiya" placeholder="مثال: باب الزوار" required>
+                            <span class="field-error" id="baladiyaError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">العنوان بالتفصيل <span class="required">*</span></label>
+                            <input type="text" id="address" name="address" placeholder="الحي، رقم الشارع، العمارة أو المعلم القريب" required>
+                            <span class="field-error" id="addressError"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes">ملاحظات إضافية (اختياري)</label>
+                        <textarea id="notes" name="notes" rows="2" placeholder="أي تعليمات ترغب في توضيحها لمندوب التوصيل أو التوقيت المناسب لك..."></textarea>
+                    </div>
+
+                    <div class="checkout-security-notice">
+                        <span class="icon">🔒</span>
+                        <span>بياناتك محمية بالكامل وتُستعمل حصرياً لتوصيل طلبك.</span>
+                    </div>
+
+                    <!-- زر تأكيد الطلب عبر WhatsApp -->
+                    <button type="submit" class="btn-whatsapp-submit" id="submitOrderBtn">
+                        <span class="wa-btn-icon">
+                            <svg viewBox="0 0 32 32" width="26" height="26" fill="currentColor">
+                                <path d="M16.002 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.139 7.952 8.163-2.115c2.355 1.285 5.021 1.965 7.839 1.965 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16.002 29.333c-2.487 0-4.919-0.655-7.051-1.897l-0.505-0.295-4.845 1.255 1.295-4.721-0.323-0.519c-1.365-2.195-2.073-4.731-2.073-7.356 0-7.351 5.983-13.333 13.333-13.333s13.333 5.983 13.333 13.333c0 7.351-5.981 13.333-13.333 13.333zM22.503 19.349c-0.355-0.179-2.103-1.037-2.429-1.156-0.327-0.119-0.564-0.179-0.803 0.179s-0.925 1.156-1.135 1.393c-0.208 0.239-0.416 0.269-0.771 0.089s-1.503-0.553-2.863-1.765c-1.059-0.944-1.773-2.112-1.981-2.469-0.208-0.357-0.021-0.551 0.156-0.728 0.16-0.16 0.356-0.416 0.533-0.624 0.179-0.208 0.237-0.357 0.356-0.595 0.119-0.237 0.059-0.445-0.031-0.624s-0.803-1.936-1.099-2.651c-0.289-0.696-0.584-0.601-0.803-0.613-0.208-0.009-0.445-0.011-0.683-0.011s-0.624 0.089-0.951 0.445c-0.327 0.356-1.247 1.219-1.247 2.971s1.276 3.447 1.455 3.684c0.179 0.239 2.511 3.835 6.084 5.377 0.849 0.368 1.512 0.587 2.029 0.751 0.853 0.271 1.631 0.233 2.245 0.141 0.684-0.103 2.103-0.86 2.399-1.691 0.297-0.831 0.297-1.543 0.208-1.691-0.087-0.149-0.325-0.239-0.681-0.417z"></path>
+                            </svg>
+                        </span>
+                        <span class="btn-text-main">تأكيد الطلب وإرسال التفاصيل عبر WhatsApp</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- نافذة نجاح إرسال الطلب -->
+    <div class="success-modal-backdrop" id="successBackdrop">
+        <div class="success-card">
+            <div class="success-icon-wrap">
+                <span class="success-checkmark">✓</span>
+            </div>
+            <h2>تم تجهيز طلبك بنجاح!</h2>
+            <p>تم توجيهك إلى تطبيق واتساب لإرسال تفاصيل الطلب مباشرة إلى إدارة متجر <strong>SAATNA</strong> على الرقم:</p>
+            <div class="store-phone-tag">+213 655 96 87 33</div>
+            <p class="success-subnote">إذا لم يُفتح واتساب تلقائيًا، يمكنك الضغط على الزر أدناه لإرسال الرسالة يدويًا:</p>
+            <a href="#" id="manualWaLink" target="_blank" class="btn-manual-wa">فتح محادثة واتساب الآن</a>
+            <button class="btn-close-success" id="closeSuccessBtn">العودة للمتجر</button>
+        </div>
+    </div>
+
+    <!-- زر واتساب العائم الثابت في أسفل الشاشة (Floating WhatsApp Button) -->
+    <a href="https://wa.me/213655968733?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%85%D8%AA%D8%AC%D8%B1%20SAATNA%D8%8C%20%D9%84%D8%AF%D9%8A%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%AD%D9%88%D9%84%20%D8%A7%D9%84%D8%B3%D8%A7%D8%B9%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B9%D8%B1%D9%88%D8%B6%D8%A9." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="floating-whatsapp" 
+       id="floatingWaBtn" 
+       aria-label="تواصل معنا عبر واتساب">
+        <div class="wa-pulse-ring"></div>
+        <svg viewBox="0 0 32 32" width="36" height="36" fill="currentColor">
+            <path d="M16.002 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.139 7.952 8.163-2.115c2.355 1.285 5.021 1.965 7.839 1.965 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16.002 29.333c-2.487 0-4.919-0.655-7.051-1.897l-0.505-0.295-4.845 1.255 1.295-4.721-0.323-0.519c-1.365-2.195-2.073-4.731-2.073-7.356 0-7.351 5.983-13.333 13.333-13.333s13.333 5.983 13.333 13.333c0 7.351-5.981 13.333-13.333 13.333zM22.503 19.349c-0.355-0.179-2.103-1.037-2.429-1.156-0.327-0.119-0.564-0.179-0.803 0.179s-0.925 1.156-1.135 1.393c-0.208 0.239-0.416 0.269-0.771 0.089s-1.503-0.553-2.863-1.765c-1.059-0.944-1.773-2.112-1.981-2.469-0.208-0.357-0.021-0.551 0.156-0.728 0.16-0.16 0.356-0.416 0.533-0.624 0.179-0.208 0.237-0.357 0.356-0.595 0.119-0.237 0.059-0.445-0.031-0.624s-0.803-1.936-1.099-2.651c-0.289-0.696-0.584-0.601-0.803-0.613-0.208-0.009-0.445-0.011-0.683-0.011s-0.624 0.089-0.951 0.445c-0.327 0.356-1.247 1.219-1.247 2.971s1.276 3.447 1.455 3.684c0.179 0.239 2.511 3.835 6.084 5.377 0.849 0.368 1.512 0.587 2.029 0.751 0.853 0.271 1.631 0.233 2.245 0.141 0.684-0.103 2.103-0.86 2.399-1.691 0.297-0.831 0.297-1.543 0.208-1.691-0.087-0.149-0.325-0.239-0.681-0.417z"></path>
+        </svg>
+        <span class="floating-tooltip">تواصل معنا الآن عبر واتساب</span>
+    </a>
+
+    <!-- حاوية الإشعارات المنبثقة (Toasts) -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- التذييل الفاخر (Footer) -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo-title">
+                    <img src="images/logo.png" alt="SAATNA" class="footer-logo" onerror="this.onerror=null; this.src='images/logo.jpg';">
+                    <span class="footer-title">SAATNA</span>
+                </div>
+                <p class="footer-tagline">SAATNA... le luxe mesuré en secondes</p>
+                <p class="footer-description">متجر إلكتروني جزائري رائد متخصص في أرقى الساعات الرجالية بأعلى معايير الأناقة والفخامة.</p>
+            </div>
+
+            <div class="footer-contact">
+                <h4>خدمة العملاء والطلبات</h4>
+                <p>واتساب المباشر: <strong dir="ltr">+213 655 96 87 33</strong></p>
+                <p>توصيل متوفر لجميع الولايات (58 ولاية جزائرية)</p>
+                <p>الدفع عند الاستلام مع فحص الساعة قبل الدفع</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 متجر SAATNA. جميع الحقوق محفوظة | موقع تجارة إلكترونية متكامل</p>
+        </div>
+    </footer>
+
+    <!-- ملف الجافاسكريبت -->
+    <script src="js/app.js"></script>
+</body>
+</html>
