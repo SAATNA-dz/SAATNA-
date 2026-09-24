@@ -456,5 +456,112 @@
 
     <!-- ملف الجافاسكريبت -->
     <script src="js/app.js"></script>
+    [24/09/2026 15:12] Khalil Mohamed: <!-- قسم حاسبة أسعار التوصيل لموقع SAATNA -->
+<div class="shipping-box" style="max-width: 500px; margin: 30px auto; padding: 20px; background: #ffffff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; direction: rtl;">
+    <h3 style="text-align: center; color: #111; margin-bottom: 20px; font-size: 20px;">حساب تكلفة التوصيل حسب الولاية</h3>
+    
+    <!-- اختيار الولاية -->
+    <div style="margin-bottom: 15px;">
+        <label for="wilaya" style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">اختر ولايتك:</label>
+        <select id="wilaya" onchange="calculateShipping()" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 15px; background: #f9f9f9;">
+            <option value="" disabled selected>-- اختر ولايتك --</option>
+            <!-- القائمة المستخرجة بدقة من جدولك -->
+            <option value="1" data-home="1500" data-office="1000">01 - أدرار</option>
+            <option value="2" data-home="800" data-office="500">02 - الشلف</option>
+            <option value="3" data-home="1000" data-office="600">03 - الأغواط</option>
+            <option value="4" data-home="800" data-office="500">04 - أم البواقي</option>
+            <option value="5" data-home="800" data-office="500">05 - باتنة</option>
+            <option value="6" data-home="800" data-office="500">06 - بجاية</option>
+            <option value="7" data-home="1000" data-office="600">07 - بسكرة</option>
+            <option value="8" data-home="1200" data-office="800">08 - بشار</option>
+            <option value="9" data-home="600" data-office="400">09 - البليدة</option>
+            <option value="10" data-home="700" data-office="450">10 - البويرة</option>
+            <option value="11" data-home="2000" data-office="1500">11 - تمنراست</option>
+            <option value="12" data-home="900" data-office="600">12 - تبسة</option>
+            <option value="13" data-home="800" data-office="500">13 - تلمسان</option>
+            <option value="14" data-home="900" data-office="600">14 - تيارت</option>
+            <option value="15" data-home="700" data-office="450">15 - تيزي وزو</option>
+            <option value="16" data-home="600" data-office="400">16 - الجزائر</option>
+            <option value="17" data-home="1000" data-office="600">17 - الجلفة</option>
+            <option value="18" data-home="800" data-office="500">18 - جيجل</option>
+            <option value="19" data-home="800" data-office="500">19 - سطيف</option>
+            <option value="20" data-home="900" data-office="600">20 - سعيدة</option>
+            <option value="21" data-home="800" data-office="500">21 - سكيكدة</option>
+            <option value="22" data-home="800" data-office="500">22 - سيدي بلعباس</option>
+            <option value="23" data-home="800" data-office="500">23 - عنابة</option>
+            <option value="24" data-home="900" data-office="600">24 - قالمة</option>
+            <option value="25" data-home="800" data-office="500">25 - قسنطينة</option>
+            <option value="26" data-home="700" data-office="450">26 - المدية</option>
+            <option value="27" data-home="800" data-office="500">27 - مستغانم</option>
+            <option value="28" data-home="800" data-office="500">28 - المسيلة</option>
+            <option value="29" data-home="800" data-office="500">29 - معسكر</option>
+            <option value="30" data-home="1100" data-office="700">30 - ورقلة</option>
+            <option value="31" data-home="800" data-office="500">31 - وهران</option>
+            <option value="32" data-home="1200" data-office="800">32 - البيض</option>
+            <option value="33" data-home="1900" data-office="1500">33 - إليزي</option>
+            <option value="34" data-home="800" data-office="500">34 - برج بوعريريج</option>
+[24/09/2026 15:12] Khalil Mohamed: <option value="35" data-home="500" data-office="300">35 - بومرداس</option>
+            <option value="36" data-home="900" data-office="600">36 - الطارف</option>
+            <option value="37" data-home="1700" data-office="1000">37 - تندوف</option>
+            <option value="38" data-home="800" data-office="500">38 - تيسمسيلت</option>
+            <option value="39" data-home="1100" data-office="700">39 - الوادي</option>
+            <option value="40" data-home="900" data-office="600">40 - خنشلة</option>
+            <option value="41" data-home="900" data-office="600">41 - سوق أهراس</option>
+            <option value="42" data-home="600" data-office="400">42 - تيبازة</option>
+            <option value="43" data-home="800" data-office="500">43 - ميلة</option>
+            <option value="44" data-home="800" data-office="500">44 - عين الدفلى</option>
+            <option value="45" data-home="1200" data-office="800">45 - النعامة</option>
+            <option value="46" data-home="800" data-office="500">46 - عين تموشنت</option>
+            <option value="47" data-home="1100" data-office="700">47 - غرداية</option>
+            <option value="48" data-home="800" data-office="500">48 - غليزان</option>
+            <option value="49" data-home="1500" data-office="1000">49 - تيميمون</option>
+            <option value="50" data-home="1000" data-office="600">50 - أولاد جلال</option>
+            <option value="51" data-home="1200" data-office="800">51 - بني عباس</option>
+            <option value="52" data-home="1800" data-office="1200">52 - عين صالح</option>
+            <option value="53" data-home="2200" data-office="1600">53 - توقرت</option>
+            <option value="54" data-home="1100" data-office="700">54 - جانت</option>
+            <option value="55" data-home="1100" data-office="700">55 - المغير</option>
+            <option value="56" data-home="1100" data-office="800">56 - المنيعة</option>
+        </select>
+    </div>
+
+    <!-- اختيار نوع التوصيل -->
+    <div style="margin-bottom: 15px;">
+        <label style="display: block; margin-bottom: 8px; font-weight: bold; color: #333;">نوع التوصيل:</label>
+        <div style="display: flex; gap: 20px;">
+            <label style="cursor: pointer;"><input type="radio" name="shipping-type" value="home" checked onchange="calculateShipping()"> إلى المنزل (Domicile)</label>
+            <label style="cursor: pointer;"><input type="radio" name="shipping-type" value="office" onchange="calculateShipping()"> إلى المكتب (Bureau)</label>
+        </div>
+    </div>
+
+    <!-- النتيجة -->
+    <div style="background: #f1f8ff; padding: 15px; border-radius: 8px; text-align: center; border: 1px solid #cce5ff;">
+        <span style="font-size: 16px; color: #333;">سعر التوصيل: </span>
+        <span id="shipping-price" style="font-size: 20px; font-weight: bold; color: #007bff;">-- دج</span>
+    </div>
+</div>
+
+<script>
+function calculateShipping() {
+    const select = document.getElementById('wilaya');
+    const selectedOption = select.options[select.selectedIndex];
+    const shippingType = document.querySelector('input[name="shipping-type"]:checked').value;
+    const priceDisplay = document.getElementById('shipping-price');
+
+    if (select.value === "") {
+        priceDisplay.innerText = "-- دج";
+        return;
+    }
+
+    let price = 0;
+    if (shippingType === 'home') {
+        price = selectedOption.getAttribute('data-home');
+    } else {
+        price = selectedOption.getAttribute('data-office');
+    }
+
+    priceDisplay.innerText = price + " دج";
+}
+</script>
 </body>
 </html>
